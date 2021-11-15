@@ -1,0 +1,12 @@
+{
+  "ids": {
+    "User": 7
+  },
+  "models": {
+    "User": {
+      "4": "{\"firstName\":\"User3\",\"email\":\"user3@example.com\",\"role\":\"admin\",\"id\":\"4\"}",
+      "5": "{\"firstName\":\"User4\",\"email\":\"user4@example.com\",\"role\":\"admin\",\"id\":\"5\"}",
+      "6": "{\"firstName\":\"User5\",\"email\":\"user5@example.com\",\"role\":\"admin\",\"id\":\"6\"}"
+    }
+  }
+}

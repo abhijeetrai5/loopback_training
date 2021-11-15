@@ -1,0 +1,26 @@
+version: '3.6'
+
+services:
+  db:
+    container_name: loopback-db
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: loopback
+      POSTGRES_PASSWORD: loopback
+      POSTGRES_DB: loopback
+    ports:
+      - '5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+  adminer:
+    container_name: oopback-adminer
+    image: adminer
+    restart: always
+    depends_on:
+      - db
+    ports:
+      - '6080:8080'
+volumes:
+  pgdata:
+    driver: local
